@@ -1,0 +1,247 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #eae8f2;
+}
+
+body {
+    background-color: #020013;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    padding: 0 50px;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        0 12.5px 10px rgba(0, 0, 0, 0.035),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        0 100px 80px rgba(0, 0, 0, 0.07)
+    ;
+}
+
+.navLinks a {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+.main {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Start of game */
+
+.scoreBoard {
+    background-color: #141321;
+    border-radius: 35px;
+    padding: 20px 0;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.scoreBoard div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score, .round {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 15px;
+    height: 50px;
+    width: 50px;
+    background-color: #7b40fd;
+    border-radius: 10px;
+    color: #eae8f2;
+}
+
+
+.counterGame {
+    background-color: #141321;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    padding: 35px 50px;
+    margin: 20px 0 100px 0;
+    border-radius: 50px;
+}
+
+.counterGame h2 {
+    margin-top: 25px;
+}
+
+button {
+    padding: 15px;
+    background-color: #7b40fd;
+    border: none;
+    border-radius: 5px;
+    color: #eae8f2;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #8e5ef8;
+}
+
+.checkBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.counterButtons {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 8px;
+    /* width: 360px; */
+    margin: 25px;
+    border-radius: 5px;
+    /* border: 1px solid white; */
+}
+
+.counterButtons button{
+    margin: 5px;
+    padding: 5px; 
+    width: 50px;
+    height: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.counterGame {
+    padding-top: 20px; 
+}
+
+.text {
+    margin-top: 25px;
+    height: 50px;
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #020013;
+}
+
+.text span {
+    padding-left: 4px;
+}
+
+
+/* Hide unused buttons */
+.switch, .additionBtn {
+    display: none;
+}
+
+/* Buttons */
+.randomNoun{
+    margin-top: 25px;
+}
+
+.amountPriceBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding-bottom: 15px;
+    width: 200px;
+}
+
+.btnRandomAll {
+    width: 200px;
+    background-color: rgb(253, 59, 59);
+}
+
+.btnRandomAll:hover {
+    background-color: rgb(255, 14, 14);
+}
+
+.startGame {
+    width: 200px;
+    font-size: 1.2rem;
+    background-color: rgb(253, 59, 59);
+}
+
+.startGame:hover {
+    background-color: rgb(255, 14, 14);
+}
+
+
+
+.switch {
+    padding-top: 15px;
+}
+.noPrice {
+    height: 13px;
+}
+
+.switch label{
+    font-size: .75rem;
+}
+
+.gameWon h2, div {
+    color: black;
+}
+
+.gameWon{
+    height: 200px;
+    width: 400px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px; 
+    background-color: white;
+    padding: 20px;
+    display: none;
+}
+
+.gameWonText {
+    margin: 20px 0;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2;
+    display: none;
+}
