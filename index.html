@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Counters</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet"> 
+  </head>
+<body>
+    <!-- <nav class="navBar">
+      <h3>Learn Korean</h3>
+      <div class="navLinks">
+        <a href="">games</a>                    
+        <a href="">reference</a>                    
+        <a href="">about</a>
+      </div>                    
+    </nav> -->
+    <main class="main">
+        <h1>Practice Korean Counters</h1>
+        <h1 style="font-family: 'Noto Sans KR', sans-serif;;">수분류사 연습</h1>
+        <div class="scoreBoard">
+          <div>
+            <h2>Score</h2>
+            <div class = "score" id ="score">0</div>
+          </div>
+          <div>
+            <h2>Round</h2>
+            <div class = "round" id ="round">0</div>
+          </div>
+        </div>
+
+        <div class = "counterGame">
+            <h2>Pick the correct counter</h2>
+            <div class = "text">
+                <span id = "amount"> </span>
+                <span id = "noun"> </span>
+                <span id = "price"> </span>
+            </div>
+            <!-- <div class = "randomNoun">
+                <button id="randomizeNoun" type="button" class = "btn btn-primary">Randomize Noun</button>
+            </div> -->
+            
+            <div class = "counterButtons">
+                <button id="" type="button" class = "counterBtn">개</button>
+                <button id="" type="button" class = "counterBtn">잔</button>
+                <button id="" type="button" class = "counterBtn">장</button>
+                <button id="" type="button" class = "counterBtn">마리</button>
+                <button id="" type="button" class = "counterBtn">병</button>
+                <button id="" type="button" class = "counterBtn">그릇</button>
+                <button id="" type="button" class = "counterBtn">권</button>
+                <button id="" type="button" class = "counterBtn">분</button>
+                <button id="" type="button" class = "counterBtn">명</button>
+                <button id="" type="button" class = "counterBtn">봉지</button>
+                <button id="" type="button" class = "counterBtn">켤레</button>
+                <button id="" type="button" class = "counterBtn">송이</button>
+                <button id="" type="button" class = "counterBtn">살</button>
+                <button id="" type="button" class = "counterBtn">자루</button>
+                <button id="" type="button" class = "counterBtn">조각</button>
+                <button id="" type="button" class = "counterBtn">대</button>
+                <button id="" type="button" class = "counterBtn">석</button>
+                <button id="" type="button" class = "counterBtn">매</button>
+                <button id="" type="button" class = "counterBtn">과</button>
+                <button id="" type="button" class = "counterBtn">대</button>
+            </div>
+          <div>
+            <button class="startGame" id = "start-game">Start Game</button>
+          </div>
+        </div>
+        <div class="gameWon" id = "gameWon">
+          <h2 id = "gameWonHeader">Good Job!</h2>
+          <div class = "gameWonText"id = "gameWonText">
+          </div>
+          <button id = "gameWonConfirm">
+            Confirm
+          </button>
+        </div>
+        <div class="cover" id="cover"></div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
